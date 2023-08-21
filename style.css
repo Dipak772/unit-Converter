@@ -1,0 +1,207 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'STIX Two Text', serif;
+}
+
+.container {
+  /* border: 1px solid bisque; */
+  border-radius: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.container:hover{
+  transform: perspective(1000px) rotate3d(5deg);
+}
+
+.heading {
+  color: bisque;
+  transition: all 0.5s ease-out;
+}
+
+.heading:hover{
+  font-size: 33px;
+  transition: all 0.5s ease;
+}
+
+#input {
+  height: 25px;
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  background: transparent;
+  color: bisque;
+  border: 1px solid bisque;
+  transition: all 0.5s ease-out;
+}
+
+#input:hover {
+  height: 28px;
+  width: 82%;
+  transition: all 0.5s ease;
+}
+
+#input::-webkit-outer-spin-button,
+#input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error-message {
+  display: none;
+  color: #D63301;
+  font-size: 12px;
+  height: fit-content;
+}
+
+.select-opt {
+  display: block;
+  height: 20px;
+  width: 40%;
+  position: absolute;
+  left: 29%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  background: bisque;
+  border: none;
+  position: relative;
+  transition: all 0.5s ease-out;
+  margin-bottom: 5px;
+  margin-top:10px;
+}
+
+.select-opt:hover {
+  height: 22px;
+  width: 41%;
+  transition: all 0.5s ease;
+}
+
+.from {
+  height: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  background: bisque;
+  border: none;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+
+.from:hover {
+  height: 22px;
+  width: 41%;
+  transition: all 0.5s ease;
+}
+
+#option_from option {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.to {
+  height: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  background: bisque;
+  border: none;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.to:hover {
+  height: 22px;
+  width: 41%;
+  transition: all 0.5s ease;
+}
+
+
+
+#btn {
+  height: 25px;
+  width: 80%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  background: transparent;
+  color: bisque;
+  border: 1px solid bisque;
+  transition: all 0.5s ease-out;
+}
+
+#btn:hover {
+  height: 28px;
+  width: 82%;
+  font-size: 15px;
+  border: 1.5px solid bisque;
+  color: black;
+  background: bisque;
+  transition: all 0.5s ease;
+}
+
+p {
+  color: bisque;
+}
+
+#massFrom {
+  display: none;
+  height: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  background: bisque;
+  border: none;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+#massTo {
+  display: none;
+  height: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  background: bisque;
+  border: none;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+#pressFrom {
+  display: none;
+}
+
+#pressTo {
+  display: none;
+}
+
+#speedFrom{
+  display: none;
+}
+
+#speedTo{
+  display: none;
+}

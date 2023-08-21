@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Converter</h1>
+    <input type="number" id="input" placeholder="Enter value..">
+    <div class="error-message" id="errorMessage"></div>
+    <br>
+
+    <select name="units" class="select-opt" id="units">
+      <option value="select">-select-</option>
+      <option value="mass">Mass</option>
+      <option value="length">Length</option>
+      <option value="pressure">Pressure</option>
+      <option value="speed">Speed</option>
+    </select>
+
+    <!-- Speed  -->
+    <!-- form  -->
+    <select name="speed" class="from" id="speedFrom">
+      <option value="select">-From-</option>
+      <option value="m/s">m/s</option>
+      <option value="mile/hr">mile/hr</option>
+      <option value="foot/sec">foot/sec</option>
+      <option value="km/hr">km/hr</option>
+      <option value="knot">knot</option>
+    </select>
+
+    <!-- to  -->
+    <select name="speed" class="to" id="speedTo">
+      <option value="select">-To-</option>
+      <option value="m/s">m/s</option>
+      <option value="mile/hr">mile/hr</option>
+      <option value="foot/sec">foot/sec</option>
+      <option value="km/hr">km/hr</option>
+      <option value="knot">knot</option>
+    </select>
+
+    <!-- Mass  -->
+    <!-- from  -->
+    <select name="mass" class="from" id="massFrom">
+      <option value="select">-From-</option>
+      <option value="kilogram">Kilogram</option>
+      <option value="gram">Gram</option>
+      <option value="tonne">Tonne</option>
+      <option value="milligram">Milligram</option>
+      <option value="microgram">microgram</option>
+      <option value="imperial-ton">Imperial Ton</option>
+      <option value="us-ton">US Ton</option>
+      <option value="stone">Stone</option>
+      <option value="pound">Pound</option>
+      <option value="ounce">Ounce</option>
+    </select>
+    <!-- to  -->
+    <select name="mass" class="to" id="massTo">
+      <option value="select">-To-</option>
+      <option value="kilogram">Kilogram</option>
+      <option value="gram">Gram</option>
+      <option value="tonne">Tonne</option>
+      <option value="milligram">Milligram</option>
+      <option value="microgram">microgram</option>
+      <option value="imperial-ton">Imperial Ton</option>
+      <option value="us-ton">US Ton</option>
+      <option value="stone">Stone</option>
+      <option value="pound">Pound</option>
+      <option value="ounce">Ounce</option>
+    </select>
+    
+
+    <!-- Length  -->
+    <!-- from  -->
+    <select name="from" class="from" id="option_from">
+      <option value="select">-From-</option>
+      <option value="meter">Meter</option>
+      <option value="kiloMeter">Kilometer</option>
+      <option value="milliMeter">millimeter</option>
+      <option value="centiMeter">centimeter</option>
+      <option value="microMeter">micrometer</option>
+      <option value="nanoMeter">nanometer</option>
+      <option value="mile">mile</option>
+      <option value="yard">yard</option>
+      <option value="foot">foot</option>
+      <option value="inch">inch</option>
+      <option value="nauticalMile">Nautical mile</option>
+    </select>
+
+    <!-- to  -->
+    <select name="to" class="to" id="option_to">
+      <option value="select">-To-</option>
+      <option value="meter">Meter</option>
+      <option value="kiloMeter">Kilometer</option>
+      <option value="milliMeter">millimeter</option>
+      <option value="centiMeter">centimeter</option>
+      <option value="microMeter">micrometer</option>
+      <option value="nanoMeter">nanometer</option>
+      <option value="mile">mile</option>
+      <option value="yard">yard</option>
+      <option value="foot">foot</option>
+      <option value="inch">inch</option>
+      <option value="nauticalMile">Nautical mile</option>
+    </select>
+
+
+    <!-- Pressure  -->
+    <!-- from  -->
+    <select name="Pressure" class="from" id="pressFrom">
+      <option value="select">-From-</option>
+      <option value="pascal">Pascal</option>
+      <option value="torr">Torr</option>
+      <option value="pound/square-inch">Pound/Square Inch</option>
+      <option value="std-atmosphere">Std. atmosphere</option>
+      <option value="bar">Bar</option>
+    </select>
+
+    <!-- to  -->
+    <select name="Pressure" class="to" id="pressTo">
+      <option value="select">-To-</option>
+      <option value="pascal">Pascal</option>
+      <option value="torr">Torr</option>
+      <option value="pound/square-inch">Pound/Square Inch</option>
+      <option value="std-atmosphere">Std. atmosphere</option>
+      <option value="bar">Bar</option>
+    </select>
+
+
+    <br>
+    <button id="btn">Convert</button>
+    <p></p>
+    <!-- <P id="result"></P> -->
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
